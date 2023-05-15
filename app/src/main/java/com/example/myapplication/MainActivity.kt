@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import java.io.File
 
 class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
@@ -12,9 +13,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
     fun onClick(v: View?)
     {
+        val file = File("Users")
+        if (file.exists()) {
+            val intent = Intent(this, MainActivity6::class.java)
+            startActivity(intent)
+        }
         val intent = Intent(this, MainActivity1::class.java)
         startActivity(intent)
     }
+
 }

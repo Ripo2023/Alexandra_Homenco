@@ -1,27 +1,25 @@
 package com.example.myapplication;
-
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.style.TtsSpan;
 import android.view.View;
 import android.widget.EditText;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import androidx.appcompat.app.AppCompatViewInflater;
+import java.io.FileOutputStream;
+import java.io.IOException;
 public class MainActivity5 extends AppCompatActivity {
 EditText texplain;
-DatabaseReference dbr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
     }
-    public void onClick5(View v)
-    {
-        texplain =  findViewById(R.id.editTextPhone);
-        Intent intent = new Intent(this, MainActivity6.class);
+    public void onClick5(View v) throws IOException {
+        FileOutputStream f;
+        EditText text = findViewById(R.id.editTextPhone);
+        f = openFileOutput("Users", Context.MODE_WORLD_READABLE);
+        f.write(text.getText().toString().getBytes());
+        Intent intent = new Intent(this, MainActivity7.class);
         startActivity(intent);
     }
 }
