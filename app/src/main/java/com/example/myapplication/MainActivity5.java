@@ -16,7 +16,7 @@ EditText texplain;
     }
     public void onClick5(View v) throws IOException {
         FileOutputStream f;
-        EditText text = findViewById(R.id.editTextPhone);
+        EditText text = findViewById(R.id.editTextCode);
         f = openFileOutput("Users.txt", Context.MODE_APPEND);
         f.write(text.getText().toString().getBytes());
         f.write('\n');
