@@ -12,17 +12,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
     }
 
     fun onClick(v: View?)
     {
-        val file = File("Users")
+        val file = File("/data/data/com.example.myapplication/files/Users.txt")
         if (file.exists()) {
-            val intent = Intent(this, MainActivity6::class.java)
+            val intent = Intent(this, MainActivity7::class.java)
             startActivity(intent)
         }
-        val intent = Intent(this, MainActivity1::class.java)
-        startActivity(intent)
+        else
+        {
+            val intent = Intent(this, MainActivity1::class.java)
+            startActivity(intent)
+        }
+
     }
 
 }

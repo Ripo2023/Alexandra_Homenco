@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_alignParentBottom="false"
+    android:background="#FFFFFF"
     tools:context=".MainActivity2">
 
     <ImageView
@@ -94,6 +95,7 @@
         android:nestedScrollingEnabled="false"
         android:text="@string/the_map_shows_the_nearest_coffee_shops_to_you_choose_the_most_convenient_one_for_you_the_app_will_tell_you_how_long_to_go_to_it"
         android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -124,6 +126,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="658dp"
+        android:onClick="onClick22"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

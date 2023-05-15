@@ -17,9 +17,11 @@ EditText texplain;
     public void onClick5(View v) throws IOException {
         FileOutputStream f;
         EditText text = findViewById(R.id.editTextPhone);
-        f = openFileOutput("Users", Context.MODE_WORLD_READABLE);
+        f = openFileOutput("Users.txt", Context.MODE_APPEND);
         f.write(text.getText().toString().getBytes());
-        Intent intent = new Intent(this, MainActivity7.class);
+        f.write('\n');
+        f.close();
+        Intent intent = new Intent(this, MainActivity6.class);
         startActivity(intent);
     }
 }

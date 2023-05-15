@@ -3,6 +3,8 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,8 +17,16 @@ public class MainActivity6 extends AppCompatActivity {
     }
     public void onClick6(View v)
     {
-        Intent intent = new Intent(this, MainActivity7.class);
-        startActivity(intent);
+        EditText t = findViewById(R.id.editTextPhone);
+        if(t.getText().toString() == "1g4q8")
+        {
+            Intent intent = new Intent(this, MainActivity7.class);
+            startActivity(intent);
+        }
+      else
+        {
+            t.setHint("Try another one time");
+        }
 
     }
 }
