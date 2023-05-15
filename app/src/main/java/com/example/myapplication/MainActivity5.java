@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import androidx.appcompat.app.AppCompatViewInflater;
 public class MainActivity5 extends AppCompatActivity {
 EditText texplain;
 DatabaseReference dbr;
@@ -20,16 +21,7 @@ DatabaseReference dbr;
     public void onClick5(View v)
     {
         texplain =  findViewById(R.id.editTextPhone);
-        if(texplain.getText() == null)
-        {
-            texplain.setText("Type number here");
-        }
-        else
-        {
-            dbr = FirebaseDatabase.getInstance().getReference("User");
-            dbr.setValue(texplain.getText());
-            Intent intent = new Intent(this, MainActivity6.class);
-            startActivity(intent);
-        }
+        Intent intent = new Intent(this, MainActivity6.class);
+        startActivity(intent);
     }
 }

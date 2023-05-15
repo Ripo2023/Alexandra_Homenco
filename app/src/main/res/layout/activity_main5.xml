@@ -81,7 +81,6 @@
         android:layout_marginBottom="134dp"
         android:ems="10"
         android:inputType="phone"
-        android:onClick="onClick5"
         android:scrollHorizontally="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
