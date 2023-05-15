@@ -18,7 +18,7 @@ public class MainActivity6 extends AppCompatActivity {
     public void onClick6(View v)
     {
         EditText t = findViewById(R.id.editTextPhone);
-        if(t.getText().toString() == "1g4q8")
+        if(t.getText().toString().equals("1g4q8"))
         {
             Intent intent = new Intent(this, MainActivity7.class);
             startActivity(intent);
