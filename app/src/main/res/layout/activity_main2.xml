@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_7" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="311dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="434dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="263dp"
+        android:fontFamily="@font/prompt_medium"
+        android:text="Search for a coffee shop"
+        android:textColor="#403D3D"
+        android:textColorHint="#000000"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginBottom="152dp"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_7" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="10dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_6" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_7" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="361dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="468dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="161dp"
+        android:focusableInTouchMode="false"
+        android:nestedScrollingEnabled="false"
+        android:text="@string/the_map_shows_the_nearest_coffee_shops_to_you_choose_the_most_convenient_one_for_you_the_app_will_tell_you_how_long_to_go_to_it"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="209dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="59dp"
+        android:onClick="onClick2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_8" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="33dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="362dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="658dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_9" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="352dp"
+        android:layout_height="358dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="263dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/img_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
